@@ -22,12 +22,12 @@ namespace Ex4
             int count = 0;
             for (int i = 0; i < n; i++)
             {
-                if ((array[i] > 0) && (array[i] % 2 != 0) && (i % 2 != 0))
+                if ((array[i] > 0) && (array[i] % 2 != 0) && (i % 2 == 0))
                 {
                     count++;
                 }
             }
-            Console.WriteLine("Количество нечетных положительных элементов, стоящих на четных местах = {0}", count);
+            Console.WriteLine("Количество нечетных положительных элементов, стоящих на четных местах индекса массива = {0}", count);
             Console.ReadKey();
         }
     }
